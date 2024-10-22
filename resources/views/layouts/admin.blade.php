@@ -15,9 +15,6 @@
                             <li class="nav-item rounded-md">
                                 <a class="nav-link  p-3 rounded-md {{ Route::is('profile') ? 'active' : '' }}" href="{{ route('profile') }}">Profile</a>
                             </li>
-                            <li class="nav-item rounded-md">
-                                <a class="nav-link  p-3 rounded-md  {{ Route::is('category') ? 'active' : '' }}" href="{{ route('category') }}">Category</a>
-                            </li>
 
                             <li class="nav-item rounded-md">
                                 <a class="nav-link  p-3 rounded-md  {{ Route::is('products') ? 'active' : '' }}" href="{{ route('products') }}">Products</a>

@@ -20,6 +20,6 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/profile', [App\Http\Controllers\HomeController::class, 'index'])->name('profile');
-Route::get('/category', [App\Http\Controllers\HomeController::class, 'category'])->name('category');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('profile');
+Route::get('/profile', [App\Http\Controllers\HomeController::class, 'profile'])->name('profile');
 Route::get('/products', [App\Http\Controllers\HomeController::class, 'products'])->name('products');
