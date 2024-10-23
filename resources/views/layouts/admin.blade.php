@@ -13,12 +13,20 @@
                     <div class="card-body">
                         <ul class="nav navbar-nav">
                             <li class="nav-item rounded-md">
-                                <a class="nav-link  p-3 rounded-md {{ Route::is('profile') ? 'active' : '' }}" href="{{ route('profile') }}">Profile</a>
+                                <a class="nav-link  p-3 rounded-md {{ Route::is('profile') ? 'active' : '' }}"
+                                    href="{{ route('profile') }}">Profile</a>
                             </li>
 
                             <li class="nav-item rounded-md">
-                                <a class="nav-link  p-3 rounded-md  {{ Route::is('products') ? 'active' : '' }}" href="{{ route('products') }}">Products</a>
+                                <a class="nav-link  p-3 rounded-md  {{ Route::is('products') ? 'active' : '' }}"
+                                    href="{{ route('products') }}">Products</a>
                             </li>
+
+                            <li class="nav-item rounded-md">
+                                <a class="nav-link  p-3 rounded-md  {{ Route::is('create') ? 'active' : '' }}"
+                                    href="{{ route('create') }}">Create Product</a>
+                            </li>
+
                         </ul>
                     </div>
                 </div>

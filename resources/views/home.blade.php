@@ -5,14 +5,12 @@
         <div class="d-flex justify-content-between">
             <div class="d-flex gap-3">
                 <div class="rounded-lg">
-                    {{-- profile picture size --}}
+
                     <img style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid #f5f5f5;padding: 3px;"
                         src="{{ auth()->user()->image ? asset('storage/profile_images/' . auth()->user()->image) : 'https://ui-avatars.com/api/?background=random&color=fff&name=' . auth()->user()->name }}"
                         alt="Profile Picture" />
-
-
-                    {{-- <img class="rounded" id="imgSrc" alt="profile_image"/> --}}
                 </div>
+
                 <div>
                     <h2 class="fw-bold font-bold">{{ auth()->user()->name }}</h2>
                     <span class="badge bg-warning fs-6 text-capitalize">{{ auth()->user()->user_type }}</span>

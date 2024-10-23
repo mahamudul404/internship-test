@@ -44,15 +44,15 @@ class HomeController extends Controller
         $imageName = time() . '.' . $image->getClientOriginalExtension();
         $image->storeAs('public/profile_images', $imageName);
 
-        // Update user's profile image
+        // Update new image
         $user->image = $imageName;
         $user->save();
 
-        // Return response to the frontend
+        // Return the image frontend
         return response()->json([
             'success' => true,
             'message' => 'Profile picture uploaded successfully.',
-            'image_url' => asset('storage/profile_images/' . $imageName),
-        ]);
-    }
+                'image_url' => asset('storage/profile_images/' . $imageName),
+            ]);
+        }
 }

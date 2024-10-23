@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 
 /*
@@ -27,3 +28,6 @@ Route::get('/profile', [HomeController::class, 'profile'])->name('profile');
 Route::get('/products', [HomeController::class, 'products'])->name('products');
 
 Route::post('/profile/upload', [HomeController::class, 'uploadProfilePicture'])->name('profile.upload');
+
+Route::get('product/create', [ProductController::class, 'create'])->name('create');
+Route::post('product', [ProductController::class, 'store'])->name('products.store');
